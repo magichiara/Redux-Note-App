@@ -1,0 +1,47 @@
+.SearchBar {
+  padding: 0 1rem;
+  display: flex;
+  gap: 1rem;
+
+  form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid pink;
+
+    input {
+      font-size: 0.9rem;
+      border: none;
+      flex-grow: 1;
+      padding: 0.3rem 0;
+      outline: none;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      font-size: 1.2rem;
+      color: gray;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .SearchBar {
+    padding: 0 1.5rem;
+
+    form {
+      input {
+        font-size: 1.1rem;
+        padding: 0.6rem 0;
+      }
+
+      button {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

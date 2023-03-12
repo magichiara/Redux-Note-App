@@ -1,0 +1,48 @@
+.NoteList {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .section_title {
+    padding: 0.3rem 0;
+    border-bottom: 2px solid navy;
+    color: pink;
+  }
+
+  .container {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    .no-results {
+      padding: 2rem;
+      color: navy;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .NoteList {
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+
+    .section_title {
+      font-size: 1.3rem;
+      padding: 0.5rem 0;
+    }
+
+    .container {
+      gap: 1.5rem;
+
+      .no-results {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+}

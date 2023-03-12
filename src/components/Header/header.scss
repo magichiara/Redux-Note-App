@@ -1,0 +1,78 @@
+.Header {
+  background-color: navy;
+  box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.4);
+  padding: 1rem 0.5rem;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: pink;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .heart {
+      display: flex;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    p {
+      font-size: 0.9rem;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    i {
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Header {
+    height: 80px;
+    padding: 1rem;
+
+    .icon {
+      gap: 0.8rem;
+
+      i {
+        font-size: 1.8rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+
+    .name {
+      p {
+        font-size: 1.1rem;
+      }
+
+      i {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+  }
+}

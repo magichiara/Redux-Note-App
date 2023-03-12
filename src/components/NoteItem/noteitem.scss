@@ -1,0 +1,119 @@
+.NoteItem {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 250px;
+  height: 250px;
+  border: 3px solid lightgray;
+  border-bottom-right-radius: 1.8rem;
+
+  .title {
+    color: navy;
+  }
+
+  .icons-wrapper {
+    padding: 1rem 0.3rem 0 0.3rem;
+    border-top: 2px solid pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    .icons {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+
+      i {
+        display: flex;
+        font-size: 1.1rem;
+      }
+    }
+
+    p {
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .note-label {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    .label-color {
+      display: flex;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+
+    .label-text {
+      text-transform: capitalize;
+    }
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+}
+
+.label-work {
+  background-color: #bce9b2;
+}
+
+.label-personal {
+  background-color: #b4e4ff;
+}
+
+.label-events {
+  background-color: #cec8f8;
+}
+
+@media only screen and (min-width: 768px) {
+  .NoteItem {
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+
+    .title {
+      font-size: 1.3rem;
+    }
+
+    .content {
+      font-size: 1.1rem;
+    }
+
+    .icons-wrapper {
+      padding: 1rem 0.3rem 0 0.3rem;
+      border-top: 2px solid pink;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .icons {
+        gap: 1rem;
+
+        i {
+          font-size: 1.4rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .note-label {
+      .label-color {
+        width: 20px;
+        height: 20px;
+      }
+
+      .label-text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
