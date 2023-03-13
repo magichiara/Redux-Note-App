@@ -2,4 +2,59 @@
   width: 100%;
   height: 100vh;
   position: relative;
+
+  .wrapper {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .App {
+    .wrapper {
+      flex-direction: row;
+      gap: 1rem;
+
+      .left-section {
+        width: 35%;
+        border-right: 1px solid rgba(128, 128, 128, 0.611);
+        gap: 3rem;
+      }
+
+      .right-section {
+        max-height: 100vh;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        overflow-y: auto;
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+        background-color: #f5f5f5;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: pink;
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
 }

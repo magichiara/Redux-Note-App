@@ -28,6 +28,7 @@ const NoteForm = () => {
 
   return (
     <div className="NoteForm">
+      <h2>ADD NOTE</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

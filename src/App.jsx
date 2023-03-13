@@ -25,10 +25,16 @@ function App() {
     <div className="App">
       {isAuthenticated ? (
         <MainLayout>
-          <SearchBar />
-          <FilterBtns setCurrentFilter={setCurrentFilter} />
-          <NoteForm />
-          <NoteList currentFilter={currentFilter} />
+          <div className="wrapper">
+            <div className="left-section">
+              <NoteForm />
+              <FilterBtns setCurrentFilter={setCurrentFilter} />
+            </div>
+            <div className="right-section">
+              <SearchBar />
+              <NoteList currentFilter={currentFilter} />
+            </div>
+          </div>
         </MainLayout>
       ) : (
         <LoginForm />

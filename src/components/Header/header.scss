@@ -1,4 +1,5 @@
 .Header {
+  width: 100%;
   background-color: navy;
   box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.4);
   padding: 1rem 0.5rem;
@@ -72,7 +73,11 @@
       }
     }
   }
+}
 
-  @media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
+  .Header {
+    height: 90px;
+    padding: 1rem;
   }
 }

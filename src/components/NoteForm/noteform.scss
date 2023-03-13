@@ -4,6 +4,11 @@
   flex-direction: column;
   gap: 1.5rem;
 
+  h2 {
+    display: none;
+    color: navy;
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -91,6 +96,14 @@
         padding: 0.8rem;
         font-size: 1.1rem;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .NoteForm {
+    h2 {
+      display: block;
     }
   }
 }
