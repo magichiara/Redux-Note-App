@@ -1,11 +1,10 @@
 .LoginForm {
   border: 1px solid navy;
-  padding: 2.5rem;
+  padding: 3rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -15,7 +14,7 @@
     flex-direction: column;
 
     i {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     .text {
@@ -29,7 +28,7 @@
       }
 
       p {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
     }
   }
@@ -44,18 +43,19 @@
       outline: none;
       background-color: transparent;
       border-bottom: 1px solid pink;
-      padding: 0.3rem 0;
-      min-width: 200px;
+      padding: 0.5rem 0;
+      min-width: 220px;
+      font-size: 1rem;
     }
 
     button {
       margin-top: 1rem;
       border: none;
       cursor: pointer;
-      padding: 0.5rem 0;
+      padding: 0.8rem 0;
       background-color: pink;
       color: navy;
-      font-size: 0.9rem;
+      font-size: 1rem;
       letter-spacing: 0.1rem;
       font-weight: 600;
       box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.4);
