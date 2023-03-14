@@ -39,7 +39,7 @@ const NoteForm = () => {
         />
 
         <textarea
-          maxLength={100}
+          maxLength={200}
           id="Content"
           value={content}
           placeholder="Description"
